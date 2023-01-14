@@ -1,0 +1,43 @@
+function min(array)
+{
+    let num;
+    for (let i = 0 ;i <= array.lenght ;i++)
+    {
+        if (isNumber(array[i]))
+        {
+            if(i==0)
+            {
+                num = +array[i];       
+            }
+            else
+            {
+                (array[i]<num) ? num= +array[i] : num;
+            } 
+        }
+        else
+        {
+            return NaN;  
+        }
+    }
+    return num;
+}
+
+function max(array)
+{
+    let num;
+    for (let i = 0 ;i <= array.lenght ;i++)
+    {
+      if (isNumber(array[i]))
+      {
+          if (i == 0) {
+            num = +array[i]
+          } else {
+            array[i] > num ? (num = +array[i]) : num
+          }
+        } else {
+          return NaN
+        }
+   }
+   return num;
+}
+  
